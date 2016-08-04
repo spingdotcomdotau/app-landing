@@ -1885,28 +1885,13 @@ h6.thanks a {
     transform: translateY(-50%)
 }
 
-@media screen and (min-width: 37.5em) {
-    .stage-smartphone {
-        float:left;
-        display: block;
-        margin-right: 5.2631578947%;
-        width: 21.0526315789%;
-        height: 35vw
-    }
-
-    .stage-smartphone:last-child {
-        margin-right: 0
-    }
-}
-
-@media screen and (min-width: 60.625em) {
+@media screen and (min-width: 900px) {
     .stage-smartphone {
         float:left;
         display: block;
         margin-right: 3.4482758621%;
-        width: 22.4137931034%;
-        height: 35vw;
-        max-height: 28rem
+        width: 256px;
+        height: 522px;
     }
 
     .stage-smartphone:last-child {
@@ -1915,26 +1900,24 @@ h6.thanks a {
 }
 
 .stage-smartphone .phone {
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
-    background: url('../images/app-screens-padded2.png') no-repeat top left;
-    background-size: 300% auto;
     transition: 600ms ease-in-out;
-    border-top: 2rem solid #f79967;
-    border-bottom: 3rem solid #f79967;
-    border-left: 3px solid #f79967;
-    border-right: 3px solid #f79967;
-    height: 100%
+    border-top: 48px solid #f79967;
+    border-bottom: 48px solid #f79967;
+    border-left: 8px solid #f79967;
+    border-right: 8px solid #f79967;
+    height: 100%;
 }
 
 .stage-smartphone .phone:after {
     content: '';
     display: block;
     position: absolute;
-    bottom: .5rem;
-    height: 2rem;
-    width: 2rem;
-    left: 45%;
+    bottom: 8px;
+    height: 32px;
+    width: 32px;
+    left: 128px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     text-align: center;
@@ -2021,7 +2004,7 @@ h6.thanks a {
     }
 }
 
-.stagenav a.active {
+.stagenav li.active a {
     background-color: #f79967;
     color: #fff;
     box-shadow: none!important

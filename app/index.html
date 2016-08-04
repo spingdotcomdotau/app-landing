@@ -71,32 +71,38 @@
             <h4>每一处，都争取好用那么一点点</h4>
             <div class="stage-indicator">
               <ul class="stagenav">
-                <li>
-                  <a data-target="1" class="active">搜索</a>
+                <li class="active">
+                  <a href="#description-1" aria-controls="description-1" role="tab" data-toggle="tab">搜索</a>
                 </li>
                 <li>
-                  <a data-target="2" class="">分享</a>
+                  <a href="#description-2" aria-controls="description-2" role="tab" data-toggle="tab">分享</a>
                 </li>
                 <li>
-                  <a data-target="3" class="">发布</a>
+                  <a href="#description-3" aria-controls="description-3" role="tab" data-toggle="tab">发布</a>
                 </li>
               </ul>
             </div>
-            <div class="stage-smartphone" data-stage="1">
-              <div class="phone">&nbsp;</div>
-            </div>
             <div class="stage-description">
-              <div class="description-1 active">
+              <div role="tabpanel" id="description-1" class="description-1 active">
                 <h3>寻找新家，也许只要一步</h3>
-                <p>无需注册。打开APP，立刻浏览众多房源。点击搜索，组合各种条件。一次点击就能找到您的新家。</p>
+                <p>无需注册。打开APP，立刻浏览房源列表。全面的搜索条件，一次点击就能找到您的新家。</p>
               </div>
-              <div class="description-2">
+              <div role="tabpanel" id="description-2" class="description-2">
                 <h3>海量房源，秒发朋友圈</h3>
                 <p>一次分享操作，所有图片自动合成，房源信息和联系方式全部自动复制，直发微信。</p>
               </div>
-              <div class="description-3">
-                <h3>打个广告，真不需要去N个论坛顶贴</h3>
-                <p>引导式发布流程，同步发布广告到不同网站，一站式管理，支持收藏。我们希望您不要在发广告上浪费太多时间。</p>
+              <div role="tabpanel" id="description-3" class="description-3">
+                <h3>发个广告，不需要到处贴</h3>
+                <p>引导式发布流程，同步发布广告到不同网站。一站式管理，支持收藏。我们希望您不要在发广告上浪费太多时间。</p>
+              </div>
+            </div>
+            <div class="stage-smartphone" data-stage="1">
+              <div class="phone">
+                <video poster="images/demo.png" width="240" height="426" preload="auto" controls autoplay loop>
+                  <source src="videos/demo-small.mp4" type="video/mp4" />
+                  <source src="videos/demo.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>

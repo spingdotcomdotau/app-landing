@@ -6,6 +6,10 @@ $(document).ready(function() {
 		sectionsColor: ['#FED340', '#f0f7f9', '#8867AB', '#f5f5f0'],
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['', '', '', '']
+		navigationTooltips: ['', '', '', ''],
+		afterRender: function () {
+				//playing the video
+				$('video').get(0).play();
+		}
 	});
 });
