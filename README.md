@@ -11,4 +11,4 @@ put everyting in `dist` folder in your host
 
 # Todo
 
-* add screencast or screenshot to demo app feature
+* add screencast or screenshot to demo app feature [Sample](https://culturedcode.com/things/iphone/)
