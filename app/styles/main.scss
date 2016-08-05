@@ -464,7 +464,7 @@ h6 {
 h1 {
     font-family: Linotte;
     font-size: 7.5vw;
-    color: #fff;
+    color: #000;
     margin: 2.7rem 0 0;
     font-weight: 400;
     text-transform: uppercase;
@@ -930,12 +930,10 @@ body {
 
 .fp-viewing-1 #section1 {
   h1 {
-    // color: #212121
-    text-shadow: 2px 1px 6px rgba(150, 150, 150, 1);
+    text-shadow: none;
   }
   h2 {
-    // color: #727272
-    text-shadow: 1px 0px 2px rgba(150, 150, 150, 1);
+    text-shadow: none;
   }
     -webkit-animation-play-state: running;
     animation-play-state: running
