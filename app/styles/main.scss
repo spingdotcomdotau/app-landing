@@ -1882,7 +1882,12 @@ h6.thanks a {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    &.section1 {
+      top: 0;
+      transform: none;
+      margin-left: 14%;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -1892,6 +1897,10 @@ h6.thanks a {
         margin-right: 3.4482758621%;
         width: 256px;
         height: 522px;
+        &.section1 {
+          width: 286px;
+          height: 576px;
+        }
     }
 
     .stage-smartphone:last-child {
@@ -1910,6 +1919,11 @@ h6.thanks a {
     height: 100%;
 }
 
+
+.stage-smartphone.section1 .phone {
+    border-color: #212121;
+}
+
 .stage-smartphone .phone:after {
     content: '';
     display: block;
@@ -1925,6 +1939,10 @@ h6.thanks a {
     border-radius: 100px;
     box-shadow: #f79967 0 0 0 0,rgba(255,255,255,.2)0 0 0 0,inset #f79967 0 0 0 0,inset rgba(255,255,255,.2)0 0 0 0;
     transition: 600ms
+}
+
+.stage-smartphone.section1 .phone:after {
+  left: 143px;
 }
 
 @media screen and (min-width: 37.5em) {
