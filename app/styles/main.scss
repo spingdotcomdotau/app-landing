@@ -11,10 +11,6 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-.play-store-icon {
-  display: none;
-}
-
 @charset "UTF-8";html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -874,7 +870,7 @@ section {
 }
 
 #section1 h2 {
-    color: rgba(255,255,255,.7)
+    color: rgba(255,255,255,1)
 }
 
 #section2 {
@@ -984,15 +980,8 @@ body {
     position: absolute;
     right: 7.5%;
     bottom: 2.5%;
-    background: url('../images/floatyman.svg') no-repeat;
     background-size: contain;
     background-position: center;
-    -webkit-animation: floatyman-s 1.5s ease-in-out alternate infinite;
-    animation: floatyman-s 1.5s ease-in-out alternate infinite;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0)
 }
 
 @media screen and (min-width: 37.5em) {
