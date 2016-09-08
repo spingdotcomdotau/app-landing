@@ -994,7 +994,8 @@ body {
     }
 }
 
-#section1 .launch-button {
+#section1 .launch-button,
+#section1 .link-button {
     margin: 1.8rem .45rem;
     width: 10.8rem;
     max-width: 40%;
@@ -1002,6 +1003,13 @@ body {
     border: 3px solid rgba(255,255,255,.7);
     border-radius: 8px;
     transition: 200ms
+}
+
+#section1 .row-two {
+    .launch-button,
+    .link-button {
+      width: 100pt;
+    }
 }
 
 #section1 .launch-button:hover {
@@ -1013,7 +1021,7 @@ body {
 }
 
 #section1 .launch-button.apple {
-    width: 12.6rem;
+    width: 11.92rem;
     position: relative
 }
 
