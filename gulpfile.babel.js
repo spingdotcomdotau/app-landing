@@ -86,6 +86,7 @@ gulp.task('videos', () => {
 
 gulp.task('extras', () => {
   return gulp.src([
+    'app/CNAME',
     'app/*.*',
     '!app/*.html'
   ], {

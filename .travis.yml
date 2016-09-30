@@ -1,0 +1,26 @@
+language: node_js
+node_js: stable
+cache:
+  directories:
+  - node_modules
+install:
+- npm install & bower install
+before_script:
+- npm install -g gulp
+script:
+- gulp
+after_script:
+- cd ./dist
+- git init
+- git config user.name "iamzifei"
+- git config user.email "iamzifei@gmail.com"
+- git add .
+- git commit -m "Update site"
+- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+branches:
+  only:
+  - master
+env:
+  global:
+  - GH_REF: github.com/spingdotcomdotau/app-landing.git
+  - secure: XZobJnuHOj8Ptwn1a5K4k90LDsGkB6LoqKX3DmcOq1jo+3JWw7ataAo2oMSXr3RNSrMAXyAkdnWEJkzdeTF5OQEn+k08hCffrOht2ZmrltutgA7/AGHVu7FKmdpSoJRvjpBTaVCZ8vrj2IUEm5UdQPvFJVYWGGZIZeLDtHLsl2L1ZeCLZfQEeKzPKfKWdREfslj0R/GPLwdzH3CfYf7fPYqIwiLbp5suJjcB5IKdGNhGhmOOM74VgSuI4clSeYW6C1mOqfPKs8S0ckbkpT/4+Gp4dYQW+a32SK6mZvUFC5AOkP/Urr/+I6HFj2Hf/WmufmZ0ydVan1f2Ih1BJOhm0hSPJEOfnKUTNwh01vd6adt6+qrW8vNLMhYRxobLJYcJR+1/6CuvfJ2tipElnwBhez5wagy3lYuUp6lKjg84aSGny504CP0LyA3js8MYfVjAtrgyeflbFE/O5IHpPse8hIiVOMouEbVZg5f1LDwZotP6mUi621eqC9gM+WDHLMA4S2172927VUAjsK861eAhcySOlH/UyX7NQLNzgs1vCfos6/3fxvCmiEYhUOh237naLifLJ3PIVqrsfnp53k9apsdmbW/uZcwcDuLfqY7FrMMakY86YCLnOGi24cKC//orthVU5V06q7duPHhgpcsaH4d8Ej5n5KqLILMBHyn2UUo=
