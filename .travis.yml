@@ -1,5 +1,6 @@
 language: node_js
-node_js: stable
+node_js:
+  - "5.6.x"
 cache:
   directories:
   - node_modules
